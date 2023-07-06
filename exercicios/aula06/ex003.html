@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS primeiro codigo</title>
+    <style>
+        body {
+            background-color: #505099d1;
+            color: #ffffff;
+            font: normal 1.8em arial;
+        }
+
+        h1 {
+            color: rgb(216, 216, 89);
+            text-align: center;
+        }
+        
+        p {
+            font-size: 0.8em;
+            padding: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Olá, mundo!</h1>
+    <p>Meu primeiro código em JavaScript.</p>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número')) // prompt é lido como string
+        var n2 = Number(window.prompt('Digite outro número')) // prompt é lido como string
+        var soma = n1 + n2
+        window.alert('A soma da ' + soma) //Concatenação
+        // + pode ser considerado adição
+        // + tambem pode ser considerado concatenação
+        // Assim (string) + (string) é concatenação
+        // e (numero) + (numero) será adição
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulação de dados em JS</title>
+    <style>
+        body {
+            font: normal 1em arial;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt('Digite seu nome')
+        document.write('É um prazer te conhecer, nome. <br>') // não faz interpolação
+        document.write('Olá,' + nome + '! É um prazer te conhecer.<br>') // usa concatenaçao
+        document.write(`Olá ${nome}! É bom conhece-lo.<br>`) // usa template string
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Olá, ${nome}! Seu nome em Maiúsculo é ${nome.toUpperCase()}.<br>`)
+        document.write(`Olá, ${nome}! Seu nome em Minúsculo é ${nome.toLowerCase()}.`)
+    </script>
+</body>
+</html>
