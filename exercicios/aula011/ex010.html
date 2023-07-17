@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+        <h1>Sistema de multas e nacionalidade</h1>
+        <div>
+            <label for="txtivel"> Velocidade:</label>
+            <input type="number" name="txtvel" id="txtivel">
+            <input type="button" value="Verificar" onclick="calcular()">
+        </div>
+        
+        <div>
+            <label for="ipais">Vivendo no(a): </label>
+            <input type="text" name="txtpais" id="txtipais">
+            <input type="button" value="Verificar" onclick="nacionalidade()">
+        </div>
+        <div id="res">
+        </div>
+
+    <script>
+        
+        function calcular() {
+            var txtv = window.document.getElementById('txtivel')
+            var vel = Number(txtv.value)
+            var res = window.document.getElementById('res')
+            res.innerHTML = `<p>Sua velocidade é de <strong>${vel}</strong> Km/h.</p>`
+            if (vel > 60){
+                res.innerHTML += `<p>Você ultrapassou o limite permitido. MULTADO!</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com segurança.</p>`
+
+        }
+
+        function nacionalidade() {
+            var txtp = window.document.getElementById('txtipais')
+            var pais = txtp.value
+            var res = window.document.getElementById('res')
+            res.innerHTML += `<p>Você mora no(a) <strong>${pais}</strong></p>`
+            if (pais == 'Brasil') {
+                res.innerHTML += 'Você é Brasileiro.'
+            } else {
+                res.innerHTML += 'Você é Estrangeiro.'
+            }
+        
+        }
+    </script>
+</body>
+</html>
