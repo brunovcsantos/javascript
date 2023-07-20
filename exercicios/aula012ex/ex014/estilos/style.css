@@ -15,9 +15,12 @@ body {
 
 header {
     text-align: center;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.345);
     color: white;
     padding: 20px 0px;
 }
+
 
 section {
     background-color: white;
@@ -26,6 +29,12 @@ section {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.303);
+}
+
+div {
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
 }
 
 footer {
